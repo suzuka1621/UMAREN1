@@ -63,7 +63,7 @@
 
 
 # ローカルでの動作方法
- % git clone https://github.com/suzuka1621/UMAREN1 
+ % git clone https://github.com/suzuka1621/UMAREN1
  % cd umaren  
  % bundle install  
  % yarn install  
