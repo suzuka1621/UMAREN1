@@ -35,7 +35,7 @@
 
 
 # 実装した機能についての画像やGIFおよびその説明
- [トップページ](https://i.gyazo.com/b7053a76d422f037e08b53abfcce91ec.mp4)
+ [トップページ](https://gyazo.com/69c018392b2a1354b1d3019e72a962b3)
 
  全てトップページから始まることができ、トーク、ユーザー検索、友達一覧、プロフィール編集と機能をまとめている。  
 
@@ -56,7 +56,7 @@
 # 開発環境
  ・Ruby  
  ・Ruby on Rails  
- ・MySQL  
+ ・PostgreSQL
  ・Github  
  ・render  
  ・Visual Studio Code  
