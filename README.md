@@ -63,8 +63,8 @@
 
 
 # ローカルでの動作方法
- % git clone https://github.com/suzuka1621/UMAREN1　　
- % cd umaren  
+ % git clone https://github.com/suzuka1621/UMAREN1　　  
+ % cd UMAREN1  
  % bundle install  
  % yarn install  
  % rails db:create  
