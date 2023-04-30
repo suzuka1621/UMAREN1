@@ -7,7 +7,7 @@
 | nickname           | string              | null: false,                   |
 | email              | string              | null: false, unique: true      |
 | encrypted_password | string              | null: false                    |
-| gender_id          | integer             | null: false                    |
+| gender             | integer             | null: false                    |
 | birthday           | date                | null: false                    |
 | prefecture_id      | integer             | null: false                    |
 | favorite_genre     | string              | null: false                    |
