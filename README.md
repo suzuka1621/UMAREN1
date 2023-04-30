@@ -3,11 +3,11 @@
 
 
 # アプリケーション概要
- 馬が好きな同士がメッセージを通して交流できるアプリ  
+ 馬好き同士がメッセージを通して交流できるアプリ  
 
 
 # URL
- https://umaren.onrender.com/  
+ https://umaren1.onrender.com/
 
 
 # テスト用アカウント
