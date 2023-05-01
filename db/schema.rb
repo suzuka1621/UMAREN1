@@ -12,10 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2023_04_30_012200) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
-  create_table "users", force: :cascade do |t|
+  create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "nickname", default: "", null: false
@@ -23,7 +20,6 @@ ActiveRecord::Schema.define(version: 2023_04_30_012200) do
     t.date "birthday"
     t.integer "prefecture_id"
     t.string "favorite_genre"
-    t.integer "wish_meet_id"
     t.text "self_introduction"
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"

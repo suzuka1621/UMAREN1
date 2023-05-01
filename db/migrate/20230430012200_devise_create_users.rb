@@ -11,7 +11,6 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.0]
       t.date    :birthday
       t.integer :prefecture_id
       t.string  :favorite_genre
-      t.integer :wish_meet_id
       t.text    :self_introduction
 
 

@@ -6,19 +6,20 @@ class User < ApplicationRecord
 
   validates :nickname, presence: true
 
+  validates :self_introduction, length: { maximum: 500 }
+
   enum gender: { man: 0, woman: 1 }
 
-  #validates :password,
-            #format: { with: /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i, message: 'is invalid. Include both letters and numbers' }
+  def update_without_current_password(params, *options)
 
-  #validates :last_name, :first_name,
-            #format: { with: /\A(?:\p{Hiragana}|\p{Katakana}|[ー－]|[一-龠々])+\z/, message: 'is invalid. Input full-width characters' }
+    if params[:password].blank? && params[:password_confirmation].blank?
+      params.delete(:password)
+      params.delete(:password_confirmation)
+    end
 
-  #validates :last_name_reading, :first_name_reading,
-            #format: { with: /\A[ァ-ヶー－]+\z/, message: 'is invalid. Input full-width katakana characters' }
-
-  #has_many :items
-  #has_many :comments
-  #has_many :orders
+    result = update_attributes(params, *options)
+    clean_up_passwords
+    result
+  end
 
 end
