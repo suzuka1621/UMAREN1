@@ -20,7 +20,6 @@ ActiveRecord::Schema.define(version: 2023_04_30_012200) do
     t.date "birthday"
     t.integer "prefecture_id"
     t.string "favorite_genre"
-    t.integer "wish_meet_id"
     t.text "self_introduction"
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
