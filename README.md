@@ -3,11 +3,11 @@
 
 
 # アプリケーション概要
- 馬が好きな同士がメッセージを通して交流できるアプリ  
+ 馬好き同士がメッセージを通して交流できるアプリ  
 
 
 # URL
- https://umaren.onrender.com/  
+ https://umaren1.onrender.com/
 
 
 # テスト用アカウント
@@ -35,9 +35,9 @@
 
 
 # 実装した機能についての画像やGIFおよびその説明
- [トップページ](https://i.gyazo.com/b7053a76d422f037e08b53abfcce91ec.mp4)
+ [トップページ](https://gyazo.com/69c018392b2a1354b1d3019e72a962b3)
 
- 全てトップページから始まることができ、トーク、ユーザー検索、友達一覧、プロフィール編集と機能をまとめている。  
+ 全てトップページから始まることができ、トーク、ユーザー検索、プロフィール編集と機能をまとめている。  
 
 
 # 実装予定の機能
@@ -56,15 +56,15 @@
 # 開発環境
  ・Ruby  
  ・Ruby on Rails  
- ・MySQL  
+ ・PostgreSQL
  ・Github  
  ・render  
  ・Visual Studio Code  
 
 
 # ローカルでの動作方法
- % git clone https://github.com/suzuka1621/umaren  
- % cd umaren  
+ % git clone https://github.com/suzuka1621/UMAREN1　　  
+ % cd UMAREN1  
  % bundle install  
  % yarn install  
  % rails db:create  
