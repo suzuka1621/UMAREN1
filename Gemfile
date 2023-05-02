@@ -60,3 +60,7 @@ group :production do
 end
 
 gem 'mysql2'
+
+gem 'carrierwave', '~> 2.0'
+
+gem "mini_magick"
