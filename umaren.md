@@ -11,8 +11,8 @@
 | birthday           | date                | null: false                    |
 | prefecture_id      | integer             | null: false                    |
 | favorite_genre     | string              | null: false                    |
-| wish_meet_id       | string              | null: false                    |
 | self-introduction  | text                |                                |
+| profile_image      | string              |                                |
 
 ### Association
 

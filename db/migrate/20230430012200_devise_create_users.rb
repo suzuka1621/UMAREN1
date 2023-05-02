@@ -12,6 +12,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.0]
       t.integer :prefecture_id
       t.string  :favorite_genre
       t.text    :self_introduction
+      t.string  :profile_image
 
 
       ## Recoverable

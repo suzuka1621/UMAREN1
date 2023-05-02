@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 2023_04_30_012200) do
     t.integer "prefecture_id"
     t.string "favorite_genre"
     t.text "self_introduction"
+    t.string "profile_image"
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
