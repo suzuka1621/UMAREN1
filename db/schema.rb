@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2023_04_30_012200) do
     t.string "nickname", default: "", null: false
     t.integer "gender", default: 0, null: false
     t.date "birthday"
-    t.integer "prefecture_id"
+    t.string "prefecture_id"
     t.string "favorite_genre"
     t.text "self_introduction"
     t.string "profile_image"

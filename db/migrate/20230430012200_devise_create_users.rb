@@ -9,7 +9,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.0]
       t.string  :nickname,           null: false, default: ""
       t.integer :gender,             null: false, default: 0
       t.date    :birthday
-      t.integer :prefecture_id
+      t.string  :prefecture_id
       t.string  :favorite_genre
       t.text    :self_introduction
       t.string  :profile_image
