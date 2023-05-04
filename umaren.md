@@ -16,29 +16,29 @@
 
 ### Association
 
-* has_many :talks
+* has_many :chat
 * has_many :reactions
-* has_many :talk_room_users
+* has_many :chat_room_users
 * has_one :identifications
 
 
 
-## talks テーブル
+## chat テーブル
 
 | Column             | Type               | Options                        |
 |--------------------|--------------------|--------------------------------|
 | message            | text               | null: false                    |
 | user               | references         | null: false, foreign_key: true |
-| talk_room          | references         | null: false, foreign_key: true |     
+| chat_room          | references         | null: false, foreign_key: true |     
 
 ### Association
 
 - belongs_to :user
-- belongs_to :talk_room
+- belongs_to :chat_room
 
 
 
-## talk_rooms テーブル
+## chat_rooms テーブル
 
 | Column             | Type               | Options                        |
 |--------------------|--------------------|--------------------------------|
@@ -51,17 +51,17 @@
 
 
 
-## talk_room_users テーブル
+## chat_room_users テーブル
 
 | Column             | Type       | Options                                |
 |--------------------|------------|----------------------------------------|
 | user               | references | null: false, foreign_key: true         |
-| talk_room          | references | null: false, foreign_key: true         |
+| chat_room          | references | null: false, foreign_key: true         |
 
 ### Association
 
 - belongs_to :user
-- belongs_to :talk_room
+- belongs_to :chat_rooms
 
 
 
