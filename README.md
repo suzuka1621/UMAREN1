@@ -41,16 +41,15 @@
 
 
 # 実装予定の機能
- 現在ユーザー管理機能を実装中  
- 今後はユーザー検索、いいね機能などの交流機能を実装していく予定  
+ 本人確認機能(画像アップロードを実装予定)  
 
 
 # データベース設計
-![ER図](app/assets/images/ウマREN_ER図.jpg)
+![ER図](app/assets/images/UMAREN1_ER%E5%9B%B3.jpg)
 
 
 # 画面遷移図
-![画面遷移図](app/assets/images/ウマREN_画面遷移図.jpg)
+![画面遷移図](app/assets/images/UMAREN1_%E7%94%BB%E9%9D%A2%E9%81%B7%E7%A7%BB%E5%9B%B3.jpg)
 
 
 # 開発環境
@@ -63,7 +62,7 @@
 
 
 # ローカルでの動作方法
- % git clone https://github.com/suzuka1621/UMAREN1　　  
+ % git clone https://github.com/suzuka1621/UMAREN1
  % cd UMAREN1  
  % bundle install  
  % yarn install  
@@ -73,4 +72,4 @@
 
 
 # 工夫したポイント
- 開発をスムーズに進めるため、GitHubのProjects機能を使い、機能ごとに開発の区切りを計画し、その機能では何が必要かを記載し実装抜けがないようにした。
+ ・Javascriptを持ち入りスワイプ機能を実装、自分で検索しなくともユーザーが出るようにしたので手軽さがアップした。

@@ -23,11 +23,11 @@
 
 
 
-## chat テーブル
+## chat_messages テーブル
 
 | Column             | Type               | Options                        |
 |--------------------|--------------------|--------------------------------|
-| message            | text               | null: false                    |
+| content            | text               |                                |
 | user               | references         | null: false, foreign_key: true |
 | chat_room          | references         | null: false, foreign_key: true |     
 
