@@ -16,7 +16,7 @@
 
 ### Association
 
-* has_many :chat
+* has_many :chat_rooms, through:chat_room_users
 * has_many :reactions
 * has_many :chat_room_users
 * has_one :identifications
@@ -46,8 +46,8 @@
 
 ### Association
 
-* has_many :talks
-* has_many :talk_room_users
+* has_many :chat_room_users
+* has_many :users, through: :chat_room_users
 
 
 
@@ -61,7 +61,7 @@
 ### Association
 
 - belongs_to :user
-- belongs_to :chat_rooms
+- belongs_to :chat_room
 
 
 
