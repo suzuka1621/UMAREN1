@@ -9,8 +9,8 @@
 | encrypted_password | string              | null: false                    |
 | gender             | integer             | null: false                    |
 | birthday           | date                | null: false                    |
-| prefecture_id      | integer             | null: false                    |
-| favorite_genre     | string              | null: false                    |
+| prefecture_id      | integer             |                                |
+| favorite_genre     | string              |                                |
 | self-introduction  | text                |                                |
 | profile_image      | string              |                                |
 
@@ -69,10 +69,9 @@
 
 | Column             | Type       | Options                                |
 |--------------------|------------|----------------------------------------|
-| to_user_id         | integer    | null: false                            |
-| from_user_id       | integer    | null: false                            |
-| status             | string     | null: false                            |
-| user               | references | null: false, foreign_key: true         |
+| to_user_id         | references | null: false, foreign_key: true         |
+| from_user_id       | references | null: false, foreign_key: true         |
+| status             | integer    | null: false                            |
 
 
 ### Association
