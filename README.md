@@ -54,8 +54,9 @@
 
 # 開発環境
  ・Ruby  
- ・Ruby on Rails  
- ・PostgreSQL
+ ・Ruby on Rails
+ ・JavaScript  
+ ・PostgreSQL  
  ・Github  
  ・render  
  ・Visual Studio Code  
@@ -72,4 +73,5 @@
 
 
 # 工夫したポイント
- ・Javascriptを持ち入りスワイプ機能を実装、自分で検索しなくともユーザーが出るようにしたので手軽さがアップした。
+ ・JavaScriptを持ち入りスワイプ機能を実装、自分で検索しなくともユーザーが出るようにしたので手軽さがアップした。
+ ・中間テーブルを用いることでデータの複雑さ(N+1問題)を解消した。
