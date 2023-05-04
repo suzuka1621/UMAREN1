@@ -20,10 +20,10 @@ const appChatRoom = consumer.subscriptions.create("ChatRoomChannel", {
 });
 
   if(/chat_rooms/.test(location.pathname)) {
-   $(document).on("keydown", ".chat-room__message-form_textarea", function(e) {
-    if (e.key === "Enter") {
-      const chat_room_id = $('textarea').data('chat_room_id')
-      appChatRoom.speak(e.target.value);
+    $(document).on("keydown", ".chat-room__message-form_textarea", function(e) {
+      if (e.key === "Enter") {
+        const chat_room_id = $('textarea').data('chat_room_id')
+        appChatRoom.speak(e.target.value, chat_room_id);
       e.target.value = '';
       e.preventDefault();
     }
