@@ -20,10 +20,10 @@
            <% end %>
 
            <div class="matching__person-name">
-             <%= user.nickname %>
+             【<%= user.nickname %>
              <%= user.gender %>
              <%= user.prefecture_id%>
-             <%= user.favorite_genre%>
+             <%= user.favorite_genre%>】
              <% user.self_introduction.split("\n").each do |line| %>
               <p><%= line %></p>
               <% end %>
