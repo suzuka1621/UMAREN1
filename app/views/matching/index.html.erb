@@ -24,7 +24,9 @@
              <%= user.gender %>
              <%= user.prefecture_id%>
              <%= user.favorite_genre%>
-             <%= user.self_introduction%>
+             <% user.self_introduction.split("\n").each do |line| %>
+              <p><%= line %></p>
+              <% end %>
 
            </div>
 
